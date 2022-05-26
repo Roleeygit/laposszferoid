@@ -18,20 +18,20 @@ if(!empty($_GET['a']) and
 {
     $a = $_GET['a'];
     $b = $_GET['b'];
-    $pi = $_GET['pi'];
 
-    $terfogat = calcArea($a,$b,$pi);
+
+    $terfogat = calcArea($a,$b);
 }
 else
 {
     $terfogat = "Hiba! Helytelen adatok.";
 }
 
-function calcArea($a,$b,$pi) 
+function calcArea($a,$b,) 
 {
 
 
-    $terfogat = (((4*$pi)/3) * (pow($a, 2)*$b));
+    $terfogat = ((4*M_PI)/3) * (pow($a, 2)*$b);
     
     return $terfogat;
 }
