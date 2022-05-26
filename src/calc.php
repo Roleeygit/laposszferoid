@@ -31,7 +31,7 @@ function calcArea($a,$b,$pi)
 {
 
 
-    $terfogat = (((4*$pi)/3) * (sqrt($a)*$b));
+    $terfogat = (((4*$pi)/3) * (pow($a, 2)*$b));
     
     return $terfogat;
 }
